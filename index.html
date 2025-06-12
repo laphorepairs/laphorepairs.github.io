@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lapho Repairs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #ffffff;
-    }
-
-    header {
-      background-color: #111;
-      padding: 1rem;
       text-align: center;
     }
 
-    header img {
-      height: 80px;
+    .lava-logo {
+      font-family: 'Big Shoulders Stencil Text', sans-serif;
+      font-size: 3rem;
+      color: #ffffff;
+      text-shadow:
+        1px 1px 2px #ff4500,
+        0 0 15px #ff0000,
+        -1px -1px 0 #000000;
+      background: linear-gradient(135deg, #1c1c1c 0%, #333 50%, #111 100%);
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px #ff6347, 0 0 10px #000;
+      letter-spacing: 3px;
+      display: inline-block;
+      margin-top: 2rem;
     }
 
     main {
@@ -32,6 +40,11 @@
 
     h1, h2, h3 {
       color: #ffd700;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
     }
 
     .card {
@@ -48,9 +61,13 @@
       box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
     }
 
-    .icon {
-      font-size: 1.8rem;
-      margin-right: 0.5rem;
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -61,56 +78,27 @@
       font-size: 0.9rem;
     }
 
-    a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .testimonials {
-      margin-top: 3rem;
-    }
-
     .testimonial {
       background: #292b2c;
       padding: 1rem;
       border-left: 4px solid #ffd700;
       margin-bottom: 1.5rem;
     }
+
+    .richards-bay {
+      font-size: 0.75rem;
+      color: #bbb;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 
 <body>
   <h1 class="lava-logo">LAPHO REPAIRS</h1>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
-
-.lava-logo {
-  font-family: 'Big Shoulders Stencil Text', sans-serif;
-  font-size: 3rem;
-  color: #ffffff;
-  text-shadow: 
-    1px 1px 2px #ff4500,   /* Lava glow */
-    0 0 15px #ff0000,      /* Outer red glow */
-    -1px -1px 0 #000000;   /* Crack effect */
-  background: linear-gradient(135deg, #1c1c1c 0%, #333 50%, #111 100%);
-  padding: 10px 20px;
-  border-radius: 8px;
-  box-shadow: inset 0 0 5px #ff6347, 0 0 10px #000;
-  letter-spacing: 3px;
-  position: relative;
-  display: inline-block;
-}
-</style>
-
-
-
 
   <main>
     <h1>Welcome to Lapho Repairs</h1>
+    <p><em>With every device, we're improving and modifying our skills.</em></p>
     <p>We specialize in professional laptop repairs with a focus on:</p>
 
     <div class="card">
@@ -135,66 +123,66 @@
     </div>
 
     <!-- Testimonials Section -->
-<section id="testimonials" style="margin-top: 60px;">
-  <h2 style="text-align: center; color: #fff; font-size: 2rem;">What Our Clients Say</h2>
-  <div id="testimonial-carousel" style="max-width: 600px; margin: 30px auto; padding: 20px; border-radius: 20px; color: #fff; font-weight: 500; font-size: 1.2rem; transition: all 0.6s ease;">
-    <p id="testimonial-text">“Lapho Repairs replaced my screen within a day! Incredible work.”</p>
-    <p style="text-align: right; font-style: italic;" id="testimonial-author">- Linda Mkhize</p>
-  </div>
-</section>
+    <section id="testimonials" style="margin-top: 60px;">
+      <h2>What Our Clients Say</h2>
+      <div id="testimonial-carousel" style="max-width: 600px; margin: 30px auto; padding: 20px; border-radius: 20px; color: #fff; font-weight: 500; font-size: 1.2rem; transition: all 0.6s ease;">
+        <p id="testimonial-text">“Lapho Repairs replaced my screen within a day! Incredible work.”</p>
+        <p style="text-align: right; font-style: italic;" id="testimonial-author">- Linda Mkhize</p>
+      </div>
+    </section>
 
-<script>
-  const testimonials = [
-    {
-      text: "“Lapho Repairs replaced my screen within a day! Incredible work.”",
-      author: "Linda Mkhize",
-      bg: "linear-gradient(135deg, #0077ff, #00c3ff)" // Blue
-    },
-    {
-      text: "“My laptop keyboard feels brand new. So impressed with the service.”",
-      author: "Andrews Smith",
-      bg: "linear-gradient(135deg, #ff6a00, #ee0979)" // Orange/Pink
-    },
-    {
-      text: "“Fixed my hinges quickly and affordably. They really know their work.”",
-      author: "Thando Shezi",
-      bg: "linear-gradient(135deg, #43e97b, #38f9d7)" // Green/Teal
-    },
-    {
-      text: "“The courier delivered and returned my laptop faster than expected. Super reliable!”",
-      author: "Loreto Modise",
-      bg: "linear-gradient(135deg, #8e2de2, #4a00e0)" // Purple
-    }
-  ];
+    <script>
+      const testimonials = [
+        {
+          text: "“Lapho Repairs replaced my screen within a day! Incredible work.”",
+          author: "Linda Mkhize",
+          bg: "linear-gradient(135deg, #0077ff, #00c3ff)"
+        },
+        {
+          text: "“My laptop keyboard feels brand new. So impressed with the service.”",
+          author: "Andrews Smith",
+          bg: "linear-gradient(135deg, #ff6a00, #ee0979)"
+        },
+        {
+          text: "“Fixed my hinges quickly and affordably. They really know their work.”",
+          author: "Thando Shezi",
+          bg: "linear-gradient(135deg, #43e97b, #38f9d7)"
+        },
+        {
+          text: "“The courier delivered and returned my laptop faster than expected. Super reliable!”",
+          author: "Loreto Modise",
+          bg: "linear-gradient(135deg, #8e2de2, #4a00e0)"
+        }
+      ];
 
-  let index = 0;
-  const container = document.getElementById("testimonial-carousel");
-  const textEl = document.getElementById("testimonial-text");
-  const authorEl = document.getElementById("testimonial-author");
+      let index = 0;
+      const container = document.getElementById("testimonial-carousel");
+      const textEl = document.getElementById("testimonial-text");
+      const authorEl = document.getElementById("testimonial-author");
 
-  function showTestimonial() {
-    const current = testimonials[index];
-    textEl.textContent = current.text;
-    authorEl.textContent = "- " + current.author;
-    container.style.background = current.bg;
-    index = (index + 1) % testimonials.length;
-  }
+      function showTestimonial() {
+        const current = testimonials[index];
+        textEl.textContent = current.text;
+        authorEl.textContent = "- " + current.author;
+        container.style.background = current.bg;
+        index = (index + 1) % testimonials.length;
+      }
 
-  setInterval(showTestimonial, 4000); // 4 seconds
-  showTestimonial();
-</script>
-
+      setInterval(showTestimonial, 4000);
+      showTestimonial();
+    </script>
 
     <div class="card">
       <h2>📞 Book a Repair</h2>
       <p>Call or WhatsApp us: <a href="https://wa.me/27769326481">+27 76 932 6481</a></p>
       <p>📧 Email: <a href="mailto:info@laphorepairs.co.za">info@laphorepairs.co.za</a></p>
     </div>
+
+    <div class="richards-bay">📍 Lane Road, Richards Bay CBD, 3900</div>
   </main>
 
   <footer>
     &copy; 2025 Lapho Repairs. All rights reserved.
   </footer>
 </body>
-
 </html>
