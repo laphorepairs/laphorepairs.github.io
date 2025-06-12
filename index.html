@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lapho Repairs</title>
-  <link rel="icon" href="./assets_task_01jt56hj6yfq9s1q42mjh0669q_1746078902_img_1-removebg-preview.png">
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      margin: 0;
+      background-color: #0e0e0e;
+      color: #fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #f0f0f0;
-      line-height: 1.6;
+      padding: 1rem;
     }
     header {
-      background-color: #121212;
-      padding: 20px;
       text-align: center;
+      margin-bottom: 2rem;
     }
     header img {
-      width: 150px;
+      max-width: 180px;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
     }
-    h1, h2 {
-      color: #ffffff;
+    .card {
+      background: linear-gradient(145deg, #1e1e1e, #121212);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
     }
-    .service {
-      background-color: #1e1e1e;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
+    .card:hover {
+      transform: scale(1.02);
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #121212;
-      font-size: 0.9em;
-      color: #aaaaaa;
+    .cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
     }
-    strong {
-      color: #00ffcc;
+    .cta a {
+      background: #25d366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .testimonials {
+      margin-top: 2rem;
+    }
+    .testimonial {
+      background: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #25d366;
+      margin-bottom: 1rem;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="./assets_task_01jt56hj6yfq9s1q42mjh0669q_1746078902_img_1-removebg-preview.png" alt="Lapho Repairs Logo">
-  </header>
-  <section>
+    <img src="/mnt/data/assets_task_01jt56hj6yfq9s1q42mjh0669q_1746078902_img_1-removebg-preview.png" alt="Lapho Repairs Logo" />
     <h1>Welcome to Lapho Repairs</h1>
     <p>We specialize in professional laptop repairs with a focus on:</p>
+  </header>
 
-    <div class="service">
-      <h2>💻 Screen Replacement</h2>
-      <p>High-quality screen replacements for a wide range of laptop models.</p>
+  <div class="card">
+    💻 <strong>Screen Replacement</strong>
+    <p>High-quality screen replacements for a wide range of laptop models.</p>
+  </div>
+  <div class="card">
+    ⌨️ <strong>Keyboard Replacement</strong>
+    <p>Reliable keyboard repair and replacement services.</p>
+  </div>
+  <div class="card">
+    🛠️ <strong>Hinge Repair</strong>
+    <p>Expert repair of broken or loose laptop hinges.</p>
+  </div>
+
+  <div class="card">
+    🚚 <strong>We also offer fast, secure courier services across South Africa, so no matter where you are, we are there too.</strong>
+    <p><strong>SILAPHO NATHI</strong></p>
+  </div>
+
+  <div class="cta">
+    <a href="https://wa.me/27712345678">📞 Book via WhatsApp</a>
+    <a href="mailto:info@laphorepairs.co.za">📧 Email Us</a>
+  </div>
+
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial">
+      <strong>Linda Mkhize</strong> on Screen Replacement:<br />
+      "I was amazed by the quality and speed of the service. My screen looks brand new!"
     </div>
 
-    <div class="service">
-      <h2>⌨️ Keyboard Replacement</h2>
-      <p>Efficient replacement of damaged or non-functional keyboards.</p>
+    <div class="testimonial">
+      <strong>Andrews Smith</strong> on Keyboard Replacement:<br />
+      "Excellent service – my keyboard was replaced perfectly and it feels better than ever."
     </div>
 
-    <div class="service">
-      <h2>🔩 Hinge Repairs</h2>
-      <p>Restore functionality with durable hinge repair solutions.</p>
+    <div class="testimonial">
+      <strong>Thando Shezi</strong> on Hinge Repair:<br />
+      "I thought my laptop was done for, but they fixed the hinges perfectly. Super grateful!"
     </div>
 
-    <p><strong>🚚 We also offer fast, secure courier services across South Africa, so no matter where you are, we are there too.</strong></p>
-    <p><strong>LAPHO NATHI</strong></p>
-
-    <h2>📞 Contact Us</h2>
-    <p>WhatsApp: +27 62 797 8025</p>
-    <p>Email: laphorepairs@gmail.com</p>
+    <div class="testimonial">
+      <strong>Loreto Modise</strong> on Courier Service:<br />
+      "Very reliable! I used their courier service and got my repaired laptop back in just 3 days."
+    </div>
   </section>
-  <footer>
-    <p>📍 Richards Bay CBD, Lane Road, 3900</p>
-    <p>&copy; 2025 Lapho Repairs</p>
-  </footer>
 </body>
 </html>
+
 
