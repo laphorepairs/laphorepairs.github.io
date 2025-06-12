@@ -113,25 +113,56 @@
       <p><strong>LAPHO NATHI</strong></p>
     </div>
 
-    <div class="testimonials">
-      <h2>🌟 What Our Customers Say</h2>
+    <!-- Testimonials Section -->
+<section id="testimonials" style="margin-top: 60px;">
+  <h2 style="text-align: center; color: #fff; font-size: 2rem;">What Our Clients Say</h2>
+  <div id="testimonial-carousel" style="max-width: 600px; margin: 30px auto; padding: 20px; border-radius: 20px; color: #fff; font-weight: 500; font-size: 1.2rem; transition: all 0.6s ease;">
+    <p id="testimonial-text">“Lapho Repairs replaced my screen within a day! Incredible work.”</p>
+    <p style="text-align: right; font-style: italic;" id="testimonial-author">- Linda Mkhize</p>
+  </div>
+</section>
 
-      <div class="testimonial">
-        <p>"Excellent screen replacement service! My laptop looks brand new again." – Linda Mkhize</p>
-      </div>
+<script>
+  const testimonials = [
+    {
+      text: "“Lapho Repairs replaced my screen within a day! Incredible work.”",
+      author: "Linda Mkhize",
+      bg: "linear-gradient(135deg, #0077ff, #00c3ff)" // Blue
+    },
+    {
+      text: "“My laptop keyboard feels brand new. So impressed with the service.”",
+      author: "Andrews Smith",
+      bg: "linear-gradient(135deg, #ff6a00, #ee0979)" // Orange/Pink
+    },
+    {
+      text: "“Fixed my hinges quickly and affordably. They really know their work.”",
+      author: "Thando Shezi",
+      bg: "linear-gradient(135deg, #43e97b, #38f9d7)" // Green/Teal
+    },
+    {
+      text: "“The courier delivered and returned my laptop faster than expected. Super reliable!”",
+      author: "Loreto Modise",
+      bg: "linear-gradient(135deg, #8e2de2, #4a00e0)" // Purple
+    }
+  ];
 
-      <div class="testimonial">
-        <p>"Keyboard was fixed quickly and works perfectly. Reliable team." – Andrews Smith</p>
-      </div>
+  let index = 0;
+  const container = document.getElementById("testimonial-carousel");
+  const textEl = document.getElementById("testimonial-text");
+  const authorEl = document.getElementById("testimonial-author");
 
-      <div class="testimonial">
-        <p>"Very professional hinge repair, and the courier was surprisingly fast and safe." – Thando Shezi</p>
-      </div>
+  function showTestimonial() {
+    const current = testimonials[index];
+    textEl.textContent = current.text;
+    authorEl.textContent = "- " + current.author;
+    container.style.background = current.bg;
+    index = (index + 1) % testimonials.length;
+  }
 
-      <div class="testimonial">
-        <p>"Smooth and affordable repairs. I’ll definitely recommend Lapho Repairs to others!" – Loreto Modise</p>
-      </div>
-    </div>
+  setInterval(showTestimonial, 4000); // 4 seconds
+  showTestimonial();
+</script>
+
 
     <div class="card">
       <h2>📞 Book a Repair</h2>
