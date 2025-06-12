@@ -36,6 +36,7 @@
       padding: 2rem;
       max-width: 900px;
       margin: auto;
+      position: relative;
     }
 
     h1, h2, h3 {
@@ -90,6 +91,47 @@
       color: #bbb;
       margin-top: 1rem;
     }
+
+    /* Rope arrow styling */
+    .rope-arrow {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 370px;
+      width: 4px;
+      height: 140px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #ffd700,
+        #ffd700 4px,
+        transparent 4px,
+        transparent 8px
+      );
+      animation: wave 2s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    .rope-head {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 12px solid #ffd700;
+      margin: 0 auto;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes wave {
+      0% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(4px); }
+      100% { transform: translateX(-50%) translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(4px); }
+    }
+
   </style>
 </head>
 
@@ -106,6 +148,10 @@
       <p>High-quality screen replacements for a wide range of laptop models.</p>
     </div>
 
+    <!-- Rope Arrow -->
+    <div class="rope-arrow"></div>
+    <div class="rope-head"></div>
+
     <div class="card">
       <h2>⌨️ Keyboard Replacement</h2>
       <p>Restore typing comfort and functionality with precise keyboard replacements.</p>
@@ -118,7 +164,7 @@
 
     <div class="card">
       <h2>🚚 Courier Services</h2>
-      <p><strong>We also offer fast, secure courier services across South Africa, so no matter where you are, we are there too.</strong></p>
+      <p>We also offer fast, secure courier services across South Africa, so no matter where you are, we are there too.</p>
       <p><strong>SILAPHO NATHI</strong></p>
     </div>
 
